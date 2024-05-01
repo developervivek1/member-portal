@@ -1,0 +1,19 @@
+.menu-link.menu-onboarding {
+    .nav-link a{
+        @extend .opacity-50,.text-dark;
+    }
+    .nav-link.active {
+        a::before,a::after{
+            @extend .d-none;
+        }
+        a{
+            @extend .opacity-100;
+        }
+        
+    } 
+    .nav-link:hover, .nav-link:focus {
+        a{
+            @extend .opacity-100;
+        }
+    }
+}

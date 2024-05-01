@@ -1,0 +1,78 @@
+.selectPicker{
+    .bootstrap-select .dropdown-toggle:focus, .bootstrap-select>select.mobile-device:focus+.dropdown-toggle {
+        outline: 0 dotted #333!important;
+        outline: 0px auto -webkit-focus-ring-color!important;
+        outline-offset: 0px; 
+        
+    }
+     .dropdown-toggle::after{
+            border-top: 0.5em solid !important;
+            border-right: 0.5em solid rgba(0,0,0,0) !important;
+            border-left: 0.5em solid rgba(0,0,0,0) !important;
+            border-bottom: 0;
+        }
+    .bs-searchbox {
+        @extend .position-relative;
+        input.form-control{
+            min-height: 41px !important;
+            height: 41px !important;   
+        }
+    }
+    .filter-option-inner-inner{
+        @extend .text-capitalize,.font-weight-500;
+    }
+}
+
+.step-group .step.missing>div {
+    @extend .bg-warning;
+    font-size: 0;
+    .icon{
+        @extend .d-block;
+    }
+}
+.ctaPreviewModal{
+    .nav-pills .nav-link.active{
+        background-color: #595DDC;
+    }
+}
+
+.customTooltip{
+    .tooltipText{
+        width: 210px;
+        @extend .text-wrap,.p-3,.text-uppercase,.invisible,.position-absolute,.start-50,.opacity-0,.text-white,.rounded-3;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 16px;
+        background-color: #6E72EE;
+        margin-left: -105px;
+        z-index: 999;
+        transition: opacity 0.3s;
+    }
+    .tooltipText.tooltipTop{
+        bottom: 135%;
+        &::after{
+            content: "";
+            @extend .position-absolute,.top-100,.start-50;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #6E72EE transparent transparent transparent;
+        }
+    }
+    .tooltipText.tooltipBottom{
+        @extend .top-100;
+        &::after{
+            content: "";
+            @extend .position-absolute,.bottom-100,.start-50;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color:  transparent transparent #6E72EE transparent ;
+        }
+    }
+    &:hover {
+        .tooltipText{
+            @extend .visible,.opacity-100;
+        }
+    }
+}

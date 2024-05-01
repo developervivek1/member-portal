@@ -1,0 +1,176 @@
+.tab-content-wrapper {
+    display: none;
+}
+
+.nav-tabs {
+    .nav-item {
+        a {
+
+            &[data-id="list-view-stake"],
+            &[data-id="list-view-task"],
+            &[data-id="list-view"],
+            &[data-id="list-view-juri"],
+            &[data-id="list-view-misc-folder"],
+            &[data-id="list-view-arizona"] {
+                .icon-list-view {
+                    display: inline-block;
+                }
+
+                .icon-list-view-active {
+                    display: none;
+                }
+
+                &.active {
+                    .icon-list-view-active {
+                        display: inline-block;
+                    }
+
+                    .icon-list-view {
+                        display: none;
+                    }
+                }
+            }
+
+            &[data-id="grid-view-stake"],
+            &[data-id="grid-view-task"],
+            &[data-id="grid-view"],
+            &[data-id="grid-view-juri"],
+            &[data-id="grid-view-misc-folder"],
+            &[data-id="grid-view-arizona"] {
+                .icon-grid-view {
+                    display: inline-block;
+                }
+
+                .icon-grid-view-active {
+                    display: none;
+                }
+
+                &.active {
+                    .icon-grid-view-active {
+                        display: inline-block;
+                    }
+
+                    .icon-grid-view {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.tab-listing {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+.card {
+    &.entity-card {
+        border: 0.4rem solid var(--bs-white);
+    }
+
+    &.active {
+        @extend .shadow;
+        transition: all 0.7s ease-in;
+        border: 0;
+
+    }
+}
+
+.entity-card-content {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+.entity-card-content .dot {
+    width: auto;
+    height: auto;
+    margin: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.folder-level {
+    display: none;
+}
+
+.entity-card-count {
+    display: flex;
+    align-items: center;
+    font-size: rem(76);
+    line-height: 1;
+}
+
+.card-purple-entities {
+    background: var(--bs-purple);
+}
+
+#upcoming-table,
+#overdue-table,
+#entity-listing {
+    tbody {
+        tr {
+            td {
+                &:last-child {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+#fileUpload {
+    .modal-dialog {
+        max-width: 380px;
+    }
+}
+
+.big-checkbox {
+    width: 18px;
+    height: 18px;
+    margin: rem(22px) 0;
+}
+
+.reminder-card {
+    border: 3px solid transparent;
+
+    &:hover {
+        border-right: 3px solid lightgrey;
+        border-top: 3px solid lightgrey;
+        border-bottom: 3px solid lightgrey;
+    }
+}
+
+.arrow-icon-min-width {
+    min-width: 20px;
+}
+
+.formation-type-min-width {
+    @extend .w-25;
+    min-width: 165px !important;
+}
+
+.fixed-max-width {
+    max-width: 300px !important;
+}
+
+.formation-date-min-width {
+    min-width: 130px !important;
+}
+
+@media (max-width: 1700px) {
+    .fixed-max-width {
+        max-width: 220px !important;
+    }
+}
+
+.card-view-height {
+    min-height: 55vh;
+}

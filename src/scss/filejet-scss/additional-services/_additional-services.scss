@@ -1,0 +1,105 @@
+.list-full-width {
+  flex-wrap: nowrap;
+
+
+  .nav-link {
+    color: var(--bs-secondary);
+    opacity: .75;
+    border-bottom: 4px solid var(--bs-secondary);
+    padding: 0 3rem rem(16);
+    margin-bottom: 1.2rem;
+    &.active {
+      opacity: 1;
+      font-weight: 900 !important;
+      color: var(--bs-purple);
+      border-color: var(--bs-purple);
+    }
+  }
+}
+
+.step-section {
+
+  .accordion-button::after {
+    background-image: url(../../../dist/images/arrow-down.png);
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url(../../../dist/images/arrow-up.png);
+  }
+}
+
+.incDecNum{
+  button{
+    @extend .purple-bg-light;
+  }
+  button:last-child{
+  @extend .d-none;
+  }
+  button.numInce{
+    width: 1rem;
+    height: 1.2rem;
+    clip-path: polygon(59% 53%, 0 0, 0 100%);
+    background-color: #6E72EE;
+  }
+  button.numDec{
+    clip-path: polygon(46% 51%, 100% 0, 100% 100%);
+    background-color: #6E72EE;
+    width: 1rem;
+    height: 1.2rem;
+  }
+  input, input:focus{
+    @extend .bg-transparent;
+  }
+}
+.previewSlides {
+  .carousel-item{
+    .nav-link.active{
+      @extend .btn-info,.text-white;
+    }
+    .nav-link.active:focus{
+      @extend .text-white;
+    }
+  }
+}
+.bootstrap-datetimepicker-widget button{
+  @extend .btn-info;
+}
+.input-group-append.input-group-addon{
+  z-index: 9;
+}  
+
+.previewSlides{
+  .owl-carousel {
+    .owl-stage{
+      @extend .d-flex,.justify-content-center,.px-3;
+    }
+    .nav-link.active{
+      @extend .btn-info,.text-white;
+    }
+    .owl-nav{
+      .owl-prev{
+        @extend .position-absolute,.start-0,.top-50,.translate-middle,.rounded-2,.shadow-sm,.text-white,.ms-2,.carousel-control-prev-icon,.icon;
+        padding: 1.5rem 1.2rem !important;
+        background-color: var(--bs-purple);
+        &.disabled{
+          @extend .opacity-50;
+        }
+        span{
+          @extend .d-none;
+        }
+      }
+      .owl-next{
+        @extend .me-0,.position-absolute,.p-3,.top-50,.translate-middle,.shadow-sm,.rounded-2,.text-white,.carousel-control-next-icon,.icon;
+        right: -22px;
+        padding: 1.5rem 1.2rem !important;
+        background-color: var(--bs-purple);
+        &.disabled{
+          @extend .opacity-50;
+        }
+        span{
+          @extend .d-none;
+        }
+      }
+      // @extend .d-flex,.justify-content-between,.position-absolute,.start-0,.w-100;
+    }
+  }
+}
