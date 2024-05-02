@@ -52,7 +52,9 @@
                             </li>
                             <!-- CTA -->
                             <li class="nav-link">
-                                <a href="javascript:void(0)" class="text-decoration-none ps-3 py-3 d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#ctaTableModal">
+                                <a href="javascript:void(0)"
+                                    class="text-decoration-none ps-3 py-3 d-flex align-items-center"
+                                    data-bs-toggle="modal" data-bs-target="#ctaTableModal">
                                     <span>
                                         <span class="icon icon-cta normal-icon"></span>
                                         <span class="icon icon-cta-purple active-icon"></span>
@@ -130,7 +132,7 @@
                                                     View Profile
                                                 </a>
                                             </li>
-                                            
+
                                             <li>
                                                 <a class="dropdown-item py-3 d-flex align-items-center"
                                                     href="../../login.html">
@@ -156,12 +158,7 @@
                                     class="form-control white-bg py-4 ps-5 pe-4 shadow mb-0" />
                             </div>
                             <div class="d-flex justify-content-between ps-3">
-                                <div class="d-flex pe-4">
-                                    <button data-bs-toggle="modal" data-bs-target="#RAFilter" type="button"
-                                        class="btn filter-btn px-3 rounded-3 border-0 w-100">
-                                        Filter <span class="icon m-0 ms-4 icon-filter"></span>
-                                    </button>
-                                </div>
+
                                 <div class="d-flex">
                                     <button type="button" class="btn btn-info px-3 rounded-3" data-bs-toggle="modal"
                                         data-bs-target="#fileJetOffice">
@@ -704,7 +701,7 @@
                             <p>"Filejet is now offering Beneficial Ownership Information (BOI) filings for the Corporate
                                 Transparency Act !</p>
                             <p>Filejet is providing the initial BOI filing (if applicable) and <b><span
-                                class="text-decoration-underline">unlimited update filings</span></b> for any
+                                        class="text-decoration-underline">unlimited update filings</span></b> for any
                                 non-exempt reporting companies for only $100 per year per entity. Billing is an annual
                                 subscription fee, per your existing Terms & Conditions.</p>
                             <p>It is fast and easy. Please click below to get started! "</p>
@@ -726,356 +723,356 @@
         </div>
     </div>
     <!-- CTA Table Ends -->
-     <!-- Notification Modal Starts -->
-     <div class="modal modal-right fade" id="notificationModal" tabindex="-1" aria-labelledby="searchModalLabel"
-     aria-hidden="true">
-     <div class="modal-dialog modal-dialog-end modal-dialog-scrollable modal-xl my-0 min-vh-100">
-         <div class="modal-content border-0 rounded-0 min-vh-100">
-             <!-- Modal Header -->
-             <div class="modal-header flex-wrap">
-                 <div class="d-flex align-items-center w-100 mb-4 pb-2">
-                     <span class="bg-dark p-3 rounded-2 me-4 d-inline-block">
-                         <span class="icon icon-sm icon-bell-white m-0"></span>
-                     </span>
-                     <div>
-                         <span class="d-block text-dark text-opacity-50 fs-9 text-uppercase">Notifications</span>
-                         <h3 class="fs-3 m-0 mt-2">Your Notifications</h3>
-                     </div>
-                 </div>
-                 <div class="d-flex align-items-center white-bg px-4 py-3 rounded-2 w-100 shadow">
-                     <span class="icon icon-search-grey opacity-25"></span>
-                     <input class="w-100 bg-transparent p-0 rounded-2 border-0" id="search" type="text" name="seach"
-                         placeholder="Find a Notification">
-                 </div>
-             </div>
-
-             <!-- Modal Header Ends -->
-
-             <!-- Modal Body -->
-             <div class="modal-body">
-                 <div class="d-flex justify-content-between align-items-center">
-                     <ul class="nav nav-tabs pt-2" id="notificationTab" role="tablist">
-                         <li class="nav-item" role="presentation">
-                             <button class="nav-link active border-0 text-uppercase" id="unread-notification-tab"
-                                 data-bs-toggle="tab" data-bs-target="#unread-notification" type="button" role="tab"
-                                 aria-controls="unreadNotification" aria-selected="true">UNREAD</button>
-                         </li>
-                         <li class="nav-item" role="presentation">
-                             <button class="nav-link border-0 text-uppercase" id="read-notification-tab"
-                                 data-bs-toggle="tab" data-bs-target="#read-notification" type="button" role="tab"
-                                 aria-controls="readNotification" aria-selected="false">READ</button>
-                         </li>
-                     </ul>
-                     <div class="d-flex gap-3">
-                        <a href="#" class="text-purple text-decoration-none d-inline-block text-uppercase"> ALL</a>
-                        <a href="#" class="text-purple text-decoration-none d-inline-block text-uppercase"> None</a>
-
+    <!-- Notification Modal Starts -->
+    <div class="modal modal-right fade" id="notificationModal" tabindex="-1" aria-labelledby="searchModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-end modal-dialog-scrollable modal-xl my-0 min-vh-100">
+            <div class="modal-content border-0 rounded-0 min-vh-100">
+                <!-- Modal Header -->
+                <div class="modal-header flex-wrap">
+                    <div class="d-flex align-items-center w-100 mb-4 pb-2">
+                        <span class="bg-dark p-3 rounded-2 me-4 d-inline-block">
+                            <span class="icon icon-sm icon-bell-white m-0"></span>
+                        </span>
+                        <div>
+                            <span class="d-block text-dark text-opacity-50 fs-9 text-uppercase">Notifications</span>
+                            <h3 class="fs-3 m-0 mt-2">Your Notifications</h3>
+                        </div>
                     </div>
-                 </div>
-                 <div class="tab-content bg-white" id="notificationTabContent">
+                    <div class="d-flex align-items-center white-bg px-4 py-3 rounded-2 w-100 shadow">
+                        <span class="icon icon-search-grey opacity-25"></span>
+                        <input class="w-100 bg-transparent p-0 rounded-2 border-0" id="search" type="text" name="seach"
+                            placeholder="Find a Notification">
+                    </div>
+                </div>
 
-                     <!-- Unread Notification -->
-                     <div class="tab-pane fade show active" id="unread-notification" role="tabpanel"
-                         aria-labelledby="unread-notification-tab">
-                         <ul class="list-group m-0 p-0 border-0 list-table">
-                             <li
-                                 class="list-group-item border-0 border-bottom rounded-0 d-flex justify-content-between align-items-center px-4">
-                                 <div class="flex-fill">
-                                     <div class="dropdown white-bg p-0 rounded-5">
+                <!-- Modal Header Ends -->
 
-                                         <a class="nav-link px-0">
-                                             <span class="fw-bold">Notification</span>
-                                         </a>
-                                     </div>
-                                 </div>
-                                 <div>
-                                     <div class="dropdown white-bg p-0 rounded-5">
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <ul class="nav nav-tabs pt-2" id="notificationTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active border-0 text-uppercase" id="unread-notification-tab"
+                                    data-bs-toggle="tab" data-bs-target="#unread-notification" type="button" role="tab"
+                                    aria-controls="unreadNotification" aria-selected="true">UNREAD</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link border-0 text-uppercase" id="read-notification-tab"
+                                    data-bs-toggle="tab" data-bs-target="#read-notification" type="button" role="tab"
+                                    aria-controls="readNotification" aria-selected="false">READ</button>
+                            </li>
+                        </ul>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="text-purple text-decoration-none d-inline-block text-uppercase"> ALL</a>
+                            <a href="#" class="text-purple text-decoration-none d-inline-block text-uppercase"> None</a>
 
-                                         <a class="nav-link dropdown-toggle show px-0" href="#"
-                                             data-bs-toggle="dropdown" aria-expanded="true">
-                                             <span class="user-name">Date</span>
-                                         </a>
-                                     </div>
-                                 </div>
-                             </li>
-                             <li class="list-group-item border-0 border-bottom rounded-0 p-4">
-                                 <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
-                                     href="">
-                                     <div>
-                                         <input type="checkbox" class="form-check-input" name="" id="">
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">**Item Name** has been shipped/emailed</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">10 / 29 / 2021</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
-                                     </div>
-                                 </a>
-                             </li>
-                             <li class="list-group-item border-0 border-bottom rounded-0 p-4">
-                                 <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
-                                     href="">
-                                     <div>
-                                         <input type="checkbox" class="form-check-input" name="" id="">
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">**Item Name** has been shipped/emailed</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">10 / 29 / 2021</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
-                                     </div>
-                                 </a>
-                             </li>
-                             <li class="list-group-item border-0 border-bottom rounded-0 p-4">
-                                 <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
-                                     href="">
-                                     <div>
-                                         <input type="checkbox" class="form-check-input" name="" id="">
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">**Item Name** has been shipped/emailed</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">10 / 29 / 2021</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
-                                     </div>
-                                 </a>
-                             </li>
-                             <li class="list-group-item border-0 border-bottom rounded-0 p-4">
-                                 <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
-                                     href="">
-                                     <div>
-                                         <input type="checkbox" class="form-check-input" name="" id="">
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">**Item Name** has been shipped/emailed</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">10 / 29 / 2021</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
-                                     </div>
-                                 </a>
-                             </li>
-                             <li class="list-group-item border-0 border-bottom rounded-0 p-4">
-                                 <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
-                                     href="">
-                                     <div>
-                                         <input type="checkbox" class="form-check-input" name="" id="">
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">**Item Name** has been shipped/emailed</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">10 / 29 / 2021</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
-                                     </div>
-                                 </a>
-                             </li>
-                             <li class="list-group-item border-0 border-bottom rounded-0 p-4">
-                                 <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
-                                     href="">
-                                     <div>
-                                         <input type="checkbox" class="form-check-input" name="" id="">
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">**Item Name** has been shipped/emailed</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">10 / 29 / 2021</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
-                                     </div>
-                                 </a>
-                             </li>
-                             <li class="list-group-item border-0 border-bottom rounded-0 p-4">
-                                 <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
-                                     href="">
-                                     <div>
-                                         <input type="checkbox" class="form-check-input" name="" id="">
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">**Item Name** has been shipped/emailed</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">10 / 29 / 2021</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
-                                     </div>
-                                 </a>
-                             </li>
-                             <li class="list-group-item border-0 border-bottom rounded-0 p-4">
-                                 <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
-                                     href="">
-                                     <div>
-                                         <input type="checkbox" class="form-check-input" name="" id="">
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">**Item Name** has been shipped/emailed</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">10 / 29 / 2021</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
-                                     </div>
-                                 </a>
-                             </li>
-                         </ul>
-                         <div class="px-4 mb-3 pt-5 mt-2">
-                             <p class="text-uppercase mb-0">Notifications based on Partner inviting a Client </p>
-                         </div>
-                         <ul class="list-group m-0 p-0 border-0 list-table">
-                             <li class="list-group-item border-0 border-bottom rounded-0 p-4">
-                                 <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
-                                     href="">
-                                     <div>
-                                         <input type="checkbox" class="form-check-input" name="" id="">
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">**Item Name** has been shipped/emailed</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">10 / 29 / 2021</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
-                                     </div>
-                                 </a>
-                             </li>
-                             <li class="list-group-item border-0 border-bottom rounded-0 p-4">
-                                 <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
-                                     href="">
-                                     <div>
-                                         <input type="checkbox" class="form-check-input" name="" id="">
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">**Item Name** has been shipped/emailed</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">10 / 29 / 2021</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
-                                     </div>
-                                 </a>
-                             </li>
-                             <li class="list-group-item border-0 border-bottom rounded-0 p-4">
-                                 <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 flex-wrap flex-sm-nowrap gap-3 align-items-center text-decoration-none w-100"
-                                     href="">
-                                     <div>
-                                         <input type="checkbox" class="form-check-input" name="" id="">
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">**Item Name** has been shipped/emailed</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">10 / 29 / 2021</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
-                                     </div>
-                                 </a>
-                             </li>
-                             <li class="list-group-item border-0 border-bottom rounded-0 p-4">
-                                 <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
-                                     href="">
-                                     <div>
-                                         <input type="checkbox" class="form-check-input" name="" id="">
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">**Item Name** has been shipped/emailed</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">10 / 29 / 2021</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
-                                     </div>
-                                 </a>
-                             </li>
-                             <li class="list-group-item border-0 border-bottom rounded-0 p-4">
-                                 <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
-                                     href="">
-                                     <div>
-                                         <input type="checkbox" class="form-check-input" name="" id="">
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">**Item Name** has been shipped/emailed</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">10 / 29 / 2021</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
-                                     </div>
-                                 </a>
-                             </li>
-                             <li class="list-group-item border-0 border-bottom rounded-0 p-4">
-                                 <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
-                                     href="">
-                                     <div>
-                                         <input type="checkbox" class="form-check-input" name="" id="">
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">**Item Name** has been shipped/emailed</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">10 / 29 / 2021</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
-                                     </div>
-                                 </a>
-                             </li>
-                             <li class="list-group-item border-0 border-bottom rounded-0 p-4">
-                                 <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
-                                     href="">
-                                     <div>
-                                         <input type="checkbox" class="form-check-input" name="" id="">
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">**Item Name** has been shipped/emailed</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">10 / 29 / 2021</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
-                                     </div>
-                                 </a>
-                             </li>
-                             <li class="list-group-item border-0 border-bottom rounded-0 p-4">
-                                 <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
-                                     href="">
-                                     <div>
-                                         <input type="checkbox" class="form-check-input" name="" id="">
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">**Item Name** has been shipped/emailed</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">10 / 29 / 2021</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
-                                     </div>
-                                 </a>
-                             </li>
-                         </ul>
-                     </div>
-                     <!-- Unread Notification -->
+                        </div>
+                    </div>
+                    <div class="tab-content bg-white" id="notificationTabContent">
 
-                     <!-- Read Notification -->
-                     <div class="tab-pane fade" id="read-notification" role="tabpanel"
-                         aria-labelledby="read-notification-tab">
-                         <ul class="list-group m-0 p-0 border-0 list-table">
-                             <li
-                                 class="list-group-item border-0 border-bottom rounded-0 d-flex justify-content-between align-items-center px-4">
-                                 <div class="flex-fill">
-                                    <div class="dropdown white-bg p-0 rounded-5">
+                        <!-- Unread Notification -->
+                        <div class="tab-pane fade show active" id="unread-notification" role="tabpanel"
+                            aria-labelledby="unread-notification-tab">
+                            <ul class="list-group m-0 p-0 border-0 list-table">
+                                <li
+                                    class="list-group-item border-0 border-bottom rounded-0 d-flex justify-content-between align-items-center px-4">
+                                    <div class="flex-fill">
+                                        <div class="dropdown white-bg p-0 rounded-5">
 
-                                        <a class="nav-link px-0">
-                                            <span class="fw-bold">Notification</span>
-                                        </a>
-                                        <!-- <ul class="dropdown-menu p-0" data-bs-popper="static">
+                                            <a class="nav-link px-0">
+                                                <span class="fw-bold">Notification</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="dropdown white-bg p-0 rounded-5">
+
+                                            <a class="nav-link dropdown-toggle show px-0" href="#"
+                                                data-bs-toggle="dropdown" aria-expanded="true">
+                                                <span class="user-name">Date</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item border-0 border-bottom rounded-0 p-4">
+                                    <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
+                                        href="">
+                                        <div>
+                                            <input type="checkbox" class="form-check-input" name="" id="">
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">**Item Name** has been shipped/emailed</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">10 / 29 / 2021</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item border-0 border-bottom rounded-0 p-4">
+                                    <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
+                                        href="">
+                                        <div>
+                                            <input type="checkbox" class="form-check-input" name="" id="">
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">**Item Name** has been shipped/emailed</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">10 / 29 / 2021</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item border-0 border-bottom rounded-0 p-4">
+                                    <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
+                                        href="">
+                                        <div>
+                                            <input type="checkbox" class="form-check-input" name="" id="">
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">**Item Name** has been shipped/emailed</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">10 / 29 / 2021</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item border-0 border-bottom rounded-0 p-4">
+                                    <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
+                                        href="">
+                                        <div>
+                                            <input type="checkbox" class="form-check-input" name="" id="">
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">**Item Name** has been shipped/emailed</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">10 / 29 / 2021</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item border-0 border-bottom rounded-0 p-4">
+                                    <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
+                                        href="">
+                                        <div>
+                                            <input type="checkbox" class="form-check-input" name="" id="">
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">**Item Name** has been shipped/emailed</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">10 / 29 / 2021</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item border-0 border-bottom rounded-0 p-4">
+                                    <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
+                                        href="">
+                                        <div>
+                                            <input type="checkbox" class="form-check-input" name="" id="">
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">**Item Name** has been shipped/emailed</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">10 / 29 / 2021</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item border-0 border-bottom rounded-0 p-4">
+                                    <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
+                                        href="">
+                                        <div>
+                                            <input type="checkbox" class="form-check-input" name="" id="">
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">**Item Name** has been shipped/emailed</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">10 / 29 / 2021</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item border-0 border-bottom rounded-0 p-4">
+                                    <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
+                                        href="">
+                                        <div>
+                                            <input type="checkbox" class="form-check-input" name="" id="">
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">**Item Name** has been shipped/emailed</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">10 / 29 / 2021</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="px-4 mb-3 pt-5 mt-2">
+                                <p class="text-uppercase mb-0">Notifications based on Partner inviting a Client </p>
+                            </div>
+                            <ul class="list-group m-0 p-0 border-0 list-table">
+                                <li class="list-group-item border-0 border-bottom rounded-0 p-4">
+                                    <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
+                                        href="">
+                                        <div>
+                                            <input type="checkbox" class="form-check-input" name="" id="">
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">**Item Name** has been shipped/emailed</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">10 / 29 / 2021</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item border-0 border-bottom rounded-0 p-4">
+                                    <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
+                                        href="">
+                                        <div>
+                                            <input type="checkbox" class="form-check-input" name="" id="">
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">**Item Name** has been shipped/emailed</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">10 / 29 / 2021</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item border-0 border-bottom rounded-0 p-4">
+                                    <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 flex-wrap flex-sm-nowrap gap-3 align-items-center text-decoration-none w-100"
+                                        href="">
+                                        <div>
+                                            <input type="checkbox" class="form-check-input" name="" id="">
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">**Item Name** has been shipped/emailed</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">10 / 29 / 2021</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item border-0 border-bottom rounded-0 p-4">
+                                    <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
+                                        href="">
+                                        <div>
+                                            <input type="checkbox" class="form-check-input" name="" id="">
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">**Item Name** has been shipped/emailed</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">10 / 29 / 2021</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item border-0 border-bottom rounded-0 p-4">
+                                    <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
+                                        href="">
+                                        <div>
+                                            <input type="checkbox" class="form-check-input" name="" id="">
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">**Item Name** has been shipped/emailed</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">10 / 29 / 2021</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item border-0 border-bottom rounded-0 p-4">
+                                    <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
+                                        href="">
+                                        <div>
+                                            <input type="checkbox" class="form-check-input" name="" id="">
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">**Item Name** has been shipped/emailed</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">10 / 29 / 2021</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item border-0 border-bottom rounded-0 p-4">
+                                    <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
+                                        href="">
+                                        <div>
+                                            <input type="checkbox" class="form-check-input" name="" id="">
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">**Item Name** has been shipped/emailed</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">10 / 29 / 2021</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item border-0 border-bottom rounded-0 p-4">
+                                    <a class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-lg-0 align-items-center text-decoration-none w-100"
+                                        href="">
+                                        <div>
+                                            <input type="checkbox" class="form-check-input" name="" id="">
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">**Item Name** has been shipped/emailed</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">10 / 29 / 2021</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Unread Notification -->
+
+                        <!-- Read Notification -->
+                        <div class="tab-pane fade" id="read-notification" role="tabpanel"
+                            aria-labelledby="read-notification-tab">
+                            <ul class="list-group m-0 p-0 border-0 list-table">
+                                <li
+                                    class="list-group-item border-0 border-bottom rounded-0 d-flex justify-content-between align-items-center px-4">
+                                    <div class="flex-fill">
+                                        <div class="dropdown white-bg p-0 rounded-5">
+
+                                            <a class="nav-link px-0">
+                                                <span class="fw-bold">Notification</span>
+                                            </a>
+                                            <!-- <ul class="dropdown-menu p-0" data-bs-popper="static">
                                             <li>
                                                 <a class="dropdown-item py-2 d-flex align-items-center border-bottom" href="#">
                                                     Latest
@@ -1087,16 +1084,16 @@
                                                 </a>
                                             </li>
                                         </ul> -->
+                                        </div>
                                     </div>
-                                </div>
-                                 <div>
-                                     <div class="dropdown white-bg p-0 rounded-5">
+                                    <div>
+                                        <div class="dropdown white-bg p-0 rounded-5">
 
-                                         <a class="nav-link dropdown-toggle show px-0" href="#"
-                                             data-bs-toggle="dropdown" aria-expanded="true">
-                                             <span class="user-name">Date</span>
-                                         </a>
-                                         <!-- <ul class="dropdown-menu p-0" data-bs-popper="static">
+                                            <a class="nav-link dropdown-toggle show px-0" href="#"
+                                                data-bs-toggle="dropdown" aria-expanded="true">
+                                                <span class="user-name">Date</span>
+                                            </a>
+                                            <!-- <ul class="dropdown-menu p-0" data-bs-popper="static">
                                              <li>
                                                  <a class="dropdown-item py-2 d-flex align-items-center border-bottom" href="#">
                                                      Past date
@@ -1108,109 +1105,111 @@
                                                  </a>
                                              </li>
                                          </ul> -->
-                                     </div>
-                                 </div>
-                             </li>
-                             <li class="list-group-item border-0 border-bottom rounded-0 p-4">
-                                 <a class="d-flex flex-wrap flex-sm-nowrap gap-3 align-items-center text-decoration-none w-100"
-                                     href="">
-                                     <div>
-                                         <input type="checkbox" class="form-check-input" name="" id="" checked>
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">**Item Name** has been shipped/emailed</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">10 / 29 / 2021</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
-                                     </div>
-                                 </a>
-                             </li>
-                             <li class="list-group-item border-0 border-bottom rounded-0 p-4">
-                                 <a class="d-flex flex-wrap flex-sm-nowrap gap-3 align-items-center text-decoration-none w-100"
-                                     href="">
-                                     <div>
-                                         <input type="checkbox" class="form-check-input" name="" id="" checked>
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">**Item Name** has been shipped/emailed</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">10 / 29 / 2021</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
-                                     </div>
-                                 </a>
-                             </li>
-                             <li class="list-group-item border-0 border-bottom rounded-0 p-4">
-                                 <a class="d-flex flex-wrap flex-sm-nowrap gap-3 align-items-center text-decoration-none w-100"
-                                     href="">
-                                     <div>
-                                         <input type="checkbox" class="form-check-input" name="" id="" checked>
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">**Item Name** has been shipped/emailed</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">10 / 29 / 2021</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
-                                     </div>
-                                 </a>
-                             </li>
-                             <li class="list-group-item border-0 border-bottom rounded-0 p-4">
-                                 <a class="d-flex flex-wrap flex-sm-nowrap gap-3 align-items-center text-decoration-none w-100"
-                                     href="">
-                                     <div>
-                                         <input type="checkbox" class="form-check-input" name="" id="" checked>
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">**Item Name** has been shipped/emailed</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">10 / 29 / 2021</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
-                                     </div>
-                                 </a>
-                             </li>
-                             <li class="list-group-item border-0 border-bottom rounded-0 p-4">
-                                 <a class="d-flex flex-wrap flex-sm-nowrap gap-3 align-items-center text-decoration-none w-100"
-                                     href="">
-                                     <div>
-                                         <input type="checkbox" class="form-check-input" name="" id="" checked>
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">**Item Name** has been shipped/emailed</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
-                                     </div>
-                                     <div>
-                                         <p class="mb-2">10 / 29 / 2021</p>
-                                         <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
-                                     </div>
-                                 </a>
-                             </li>
-                         </ul>
-                     </div>
-                     <!-- Read Notification -->
-                 </div>
-             </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item border-0 border-bottom rounded-0 p-4">
+                                    <a class="d-flex flex-wrap flex-sm-nowrap gap-3 align-items-center text-decoration-none w-100"
+                                        href="">
+                                        <div>
+                                            <input type="checkbox" class="form-check-input" name="" id="" checked>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">**Item Name** has been shipped/emailed</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">10 / 29 / 2021</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item border-0 border-bottom rounded-0 p-4">
+                                    <a class="d-flex flex-wrap flex-sm-nowrap gap-3 align-items-center text-decoration-none w-100"
+                                        href="">
+                                        <div>
+                                            <input type="checkbox" class="form-check-input" name="" id="" checked>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">**Item Name** has been shipped/emailed</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">10 / 29 / 2021</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item border-0 border-bottom rounded-0 p-4">
+                                    <a class="d-flex flex-wrap flex-sm-nowrap gap-3 align-items-center text-decoration-none w-100"
+                                        href="">
+                                        <div>
+                                            <input type="checkbox" class="form-check-input" name="" id="" checked>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">**Item Name** has been shipped/emailed</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">10 / 29 / 2021</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item border-0 border-bottom rounded-0 p-4">
+                                    <a class="d-flex flex-wrap flex-sm-nowrap gap-3 align-items-center text-decoration-none w-100"
+                                        href="">
+                                        <div>
+                                            <input type="checkbox" class="form-check-input" name="" id="" checked>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">**Item Name** has been shipped/emailed</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">10 / 29 / 2021</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item border-0 border-bottom rounded-0 p-4">
+                                    <a class="d-flex flex-wrap flex-sm-nowrap gap-3 align-items-center text-decoration-none w-100"
+                                        href="">
+                                        <div>
+                                            <input type="checkbox" class="form-check-input" name="" id="" checked>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">**Item Name** has been shipped/emailed</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">**Entity Name**</span>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">10 / 29 / 2021</p>
+                                            <span class="d-block text-dark text-opacity-50 fs-8">08:15 AM</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Read Notification -->
+                    </div>
+                </div>
 
-             <!-- Modal Body Ends-->
+                <!-- Modal Body Ends-->
 
-             <div class="modal-footer mt-3 pb-0">
-                 <div class="d-flex justify-content-end">
-                     <button type="button" class="btn btn-info px-5 py-3 me-3" id="markAsReadBtn">Mark as Read</button>
-                     <button type="button" class="btn btn-info px-5 py-3 me-3 d-none" id="markAsUnreadBtn">Mark as UnRead</button>
-                     <button type="button" class="btn btn-info px-5 py-3" data-bs-dismiss="modal">Close</button>
-                 </div>
-             </div>
+                <div class="modal-footer mt-3 pb-0">
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-info px-5 py-3 me-3" id="markAsReadBtn">Mark as
+                            Read</button>
+                        <button type="button" class="btn btn-info px-5 py-3 me-3 d-none" id="markAsUnreadBtn">Mark as
+                            UnRead</button>
+                        <button type="button" class="btn btn-info px-5 py-3" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
 
-         </div>
-     </div>
- </div>
- <!-- Notification Modal Ends -->
+            </div>
+        </div>
+    </div>
+    <!-- Notification Modal Ends -->
 
     <!-- Filejet Offices Modal start-->
     <div class="modal modal-right fade" id="fileJetOffice" tabindex="-1" aria-labelledby="searchModalLabel"
@@ -1238,63 +1237,62 @@
                                 <thead>
                                     <tr>
                                         <th>Name</th>
+                                        <th>State</th>
                                         <th>Address</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>Filejet LLC.</td>
-                                        <td>1234 Main street, Los Angeles, AL 90220</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Filejet LLC.</td>
-                                        <td>1234 Main street, Los Angeles, AL 90220</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Filejet LLC.</td>
-                                        <td>1234 Main street, Los Angeles, AL 90220</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Filejet LLC.</td>
-                                        <td>1234 Main street, Los Angeles, AL 90220</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Filejet LLC.</td>
-                                        <td>1234 Main street, Los Angeles, AL 90220</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Filejet LLC.</td>
-                                        <td>1234 Main street, Los Angeles, AL 90220</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Filejet LLC.</td>
-                                        <td>1234 Main street, Los Angeles, AL 90220</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Filejet LLC.</td>
-                                        <td>1234 Main street, Los Angeles, AL 90220</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Filejet LLC.</td>
-                                        <td>1234 Main street, Los Angeles, AL 90220</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Filejet LLC.</td>
-                                        <td>1234 Main street, Los Angeles, AL 90220</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Filejet LLC.</td>
-                                        <td>1234 Main street, Los Angeles, AL 90220</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Filejet LLC.</td>
-                                        <td>1234 Main street, Los Angeles, AL 90220</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Filejet LLC.</td>
-                                        <td>1234 Main street, Los Angeles, AL 90220</td>
-                                    </tr>
 
+                                    <tr class="odd">
+                                        <td>FILEJET INC.</td>
+                                        <td class="sorting_1">AK</td>
+                                        <td>721 Depot Dr. Anchorage, AK 99501-1615</td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td>FILEJET INC.</td>
+                                        <td class="sorting_1">AL</td>
+                                        <td>600 Boulevard S SW, Ste. 104U Huntsville, AL 35802-2175</td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td>FILEJET INC.</td>
+                                        <td class="sorting_1">AR</td>
+                                        <td>70 N. College Ave. Fayetteville, AR 72701-5341</td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td>FILEJET INC.</td>
+                                        <td class="sorting_1">AZ</td>
+                                        <td>1525 S. Higley Rd. Ste. 104-333 Gilbert, AZ 85296-5045</td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td>FILEJET INC. 3970322</td>
+                                        <td class="sorting_1">CA</td>
+                                        <td>10440 Pioneer Blvd. Suite 8 Santa Fe Springs, CA 90670</td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td>FILEJET INC.</td>
+                                        <td class="sorting_1">CO</td>
+                                        <td>1155 Kelly Johnson Blvd. Ste 111-27 Colorado Springs, CO 80920</td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td>FILEJET INC.</td>
+                                        <td class="sorting_1">CT</td>
+                                        <td>6 Landmark Sq., Ste 400 Stamford, CT 06901</td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td>FILEJET INC.</td>
+                                        <td class="sorting_1">DC</td>
+                                        <td>1250 Connecticut Ave. NW. Ste 700-2 Washington DC, 20036</td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td>FILEJET INC.</td>
+                                        <td class="sorting_1">DE</td>
+                                        <td>300 Delaware Ave, Ste 210F Wilmington, DE 19801-6601</td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td>FILEJET INC.</td>
+                                        <td class="sorting_1">FL</td>
+                                        <td>625 E. Twiggs St. Ste 110 Tampa, FL 33602-3931</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -1344,22 +1342,33 @@
                                 <div class="form-check col-md-4 mb-3 pe-3">
                                     <input class="form-check-input" type="checkbox" name="" id="1">
                                     <label class="form-check-label text-capitalize m-0" for="1">
-                                        TEST GROUP - AUTOMATION
+                                        Walters Management
                                     </label>
                                 </div>
                                 <div class="form-check col-md-4 mb-3 pe-3">
                                     <input class="form-check-input" type="checkbox" name="" id="2">
                                     <label class="form-check-label text-capitalize" for="2">
-                                        TEST GROUP TEST GROUP
+                                        1950 HOLDINGS INC
                                     </label>
                                 </div>
                                 <div class="form-check col-md-4 mb-3 pe-3">
                                     <input class="form-check-input" type="checkbox" name="" id="3">
                                     <label class="form-check-label text-capitalize" for="3">
-                                        TEST RIGHT TEST RIGHT
+                                        2301 REDONDO INVESTOR, LLC
                                     </label>
                                 </div>
-                              
+                                <div class="form-check col-md-4 mb-3 pe-3">
+                                    <input class="form-check-input" type="checkbox" name="" id="3">
+                                    <label class="form-check-label text-capitalize" for="3">
+                                        A&V Dairy, LLC
+                                    </label>
+                                </div>
+                                <div class="form-check col-md-4 mb-3 pe-3">
+                                    <input class="form-check-input" type="checkbox" name="" id="3">
+                                    <label class="form-check-label text-capitalize" for="3">
+                                        A&V Dairy, LLC
+                                    </label>
+                                </div>
                             </div>
                         </div>
                         <div class="mb-3">
@@ -2612,18 +2621,18 @@
     <script>
         const markAsReadBtn = document.getElementById('markAsReadBtn');
         const markAsUnreadBtn = document.getElementById('markAsUnreadBtn');
-      
+
         document.querySelectorAll('.nav-link').forEach(button => {
-          button.addEventListener('click', () => {
-            markAsReadBtn.classList.add('d-none');
-            markAsUnreadBtn.classList.add('d-none');
-            
-            if (button.id === 'unread-notification-tab') {
-                markAsReadBtn.classList.remove('d-none');
-            } else if (button.id === 'read-notification-tab') {
-                markAsUnreadBtn.classList.remove('d-none');
-            }
-          });
+            button.addEventListener('click', () => {
+                markAsReadBtn.classList.add('d-none');
+                markAsUnreadBtn.classList.add('d-none');
+
+                if (button.id === 'unread-notification-tab') {
+                    markAsReadBtn.classList.remove('d-none');
+                } else if (button.id === 'read-notification-tab') {
+                    markAsUnreadBtn.classList.remove('d-none');
+                }
+            });
         });
     </script>
     <!-- end -->
